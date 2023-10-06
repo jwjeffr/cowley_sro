@@ -92,8 +92,8 @@ def main():
     
     # define k-nn cutoffs, i.e. a bond is in k-nn shell if first_cutoff < bond_length < second_cutoff
     
-    first_cutoff = 0.0
-    second_cutoff = 3.2
+    first_cutoff = float(sys.argv[3])
+    second_cutoff = float(sys.argv[4])
     
     # create ovito pipeline, add a bonds modifier to create needed topology
 
