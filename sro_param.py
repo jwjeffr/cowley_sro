@@ -59,8 +59,10 @@ class SROModifier:
         
         # calculate sro_array
         # outer gives array such that O[i, j] = c[i] * c[j]
+
+        # https://doi.org/10.1016/j.actamat.2022.117621
         
-        sro_array = 1.0 - probability_array / np.outer(concentrations, concentrations)
+        sro_array = 1.0 - probability_array / (2.0 * np.outer(concentrations, concentrations))
         
         # create iterable of type pairs
         
