@@ -17,3 +17,5 @@ on line 108. Then, run:
   python sro_param.py input.dump output.png first_cutoff second_cutoff
 
 which will perform the SRO calculation using the dump file ``input.dump`` with cutoffs ``first_cutoff`` and ``second_cutoff``, saving the plot to ``output.png``.
+
+If you have multiple dump files labelled like ``input.*.dump``, it should be fine to write ``input.*.dump`` in the command above. I haven't tested this, though.
