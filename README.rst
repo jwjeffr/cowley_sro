@@ -6,7 +6,7 @@ A couple of things need to be specified in the script:
 - A second cutoff
 - A type map
 
-To calculate the Cowley SRO parameter, we need to search for neighbors within some cutoff distance. The first and second cutoff are respectively the minimum and maximum distance to search for neighbors with. You can find this from the radial distribution function in `OVITO`_.
+To calculate the Cowley SRO parameter, we need to search for neighbors within some cutoff distance. The first and second cutoff are respectively the minimum and maximum distance to search for neighbors with. You can find this from the radial distribution function in `OVITO`_. (**TODO** automate this)
 
 The type map (line 108) is optional, but specifying it labels the atom-atom pairs in the plot with their atom names. If type 1 means iron and type 2 means nickel in your script, you can write:
 
